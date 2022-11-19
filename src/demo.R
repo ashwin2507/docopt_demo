@@ -10,7 +10,11 @@ Options:
 --arg2=<arg2>     Takes any value (this is a required option)
 [--arg3=<arg3>]   Takes any value (this is an optional option)
 " -> doc
+main <- function{
+    opt <- docopt(doc)
+    print(opt)
+    print(typeof(opt))
+}
 
-opt <- docopt(doc)
-print(opt)
-print(typeof(opt))
+
+main()
