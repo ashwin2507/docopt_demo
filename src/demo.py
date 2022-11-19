@@ -11,7 +11,12 @@ Options:
 [--arg3=<arg3>]   Takes any value (this is an optional option)
 """ 
 
-from docopt import docopt
-opt = docopt(__doc__)
-print(opt)
-print(type(opt))
+def main():
+    from docopt import docopt
+    opt = docopt(__doc__)
+    print(opt)
+    print(type(opt))
+
+
+if __name__ == "__main__":
+	main()
